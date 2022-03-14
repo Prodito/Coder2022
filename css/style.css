@@ -232,7 +232,7 @@ body{
   gap: 20px;
 }
 
-/* Animacion para Home a falta de carousel Se agrega en la rama nueva para animaciones
+/* Animacion para Home a falta de carousel Se agrega en la rama nueva para animaciones */
     .cover{ animation: changeBg 10s infinite; width:auto; height:70vh; background:no-repeat fixed center; background-size:cover;
     }
   @keyframes changeBg{
@@ -240,7 +240,7 @@ body{
      50% {background-image: url("../img/ambulancia\ 2.jpeg");}
      100% {background-image: url("../img/ambulancia\ 3.jpg");}
   }
-  */
+  
 @media (max-width: 768px) {
 
     .articles{
