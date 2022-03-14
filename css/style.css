@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'League Spartan', sans-serif;
+	box-sizing: border-box;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+}
+
+header{
+	background-color: #3d8ccc;
+}
+
+.headerNav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.headerNavMenu{
+    display:flex;
+    list-style-type: none;
+}
+
+.headerLogo{
+    width:100px;
+}
+
+.navToggle {
+  color:#ffffff;
+  background-color:#3170a3;
+  padding:10px;
+  border: solid 1px;
+  border-radius: 5px;
+  font-size: 30px;
+  display:none;
+}
+
+.mainLogin{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/backgroundlogin.jpg");
+    background-size: cover;
+	  background-color: #f3f3f3;
+    align-content: center;
+    background-position: center;
+}
+
+.mainServices{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/backgroundServices.jpg");
+  background-size:cover;
+  background-color: #f3f3f3;
+  background-position:center;
+  padding: 20px 0;
+}
+
+.mainContact{
+  background:url("../img/contact-us.jpg");
+  background-size:cover;
+  background-color: #f3f3f3;
+  background-position:center;
+  padding: 20px 0;
+}
+
+.mainIndex{
+    background-color: #ffffff;
+}
+
+footer{
+	background-color: #3d8ccc;
+  padding:20px;
+}
+
+.footerNavMenu{
+    display:flex;
+    justify-content:center;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.footerTitle{
+    text-align: center;
+    font-size: x-small;
+    margin-top: 15px;
+}
+
+.navLink{
+    color :#ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    display:block;
+}
+
+.navLink:hover,.navLink_active{
+    color:#000;
+    background-color:#ffffff;
+    transition:0.5s;
+}
+
+body{
+	  display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.sectionLogForm{
+    color:#000;
+    margin:0 auto;
+    max-width: 30em;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.logFormTitle{
+    margin-bottom:20px;
+    font-size: x-large;
+}
+
+.logFormInput{
+    display:block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding:10px;
+    font-size: medium;
+}
+
+.logFormP {
+    text-decoration: none;
+    color:rgb(95, 95, 95);
+}
+
+.logFormP:hover{
+    color:#000;
+}
+
+.article{
+  padding: 30px 0;
+}
+
+.articles{
+    display:flex;
+    gap:20px;
+}
+
+.articleTitle{
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+
+.articleP{
+  margin-bottom: 10px;
+}
+
+.sectionTableVehicles{
+  color:#ffffff;
+  display:flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid;
+  border-spacing: 10px 5px;
+  margin: 0 auto;
+  max-width: 35em;
+  padding: 10px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.sectionTitle{
+  color: #ffffff;
+  display:flex;
+  justify-content: center;
+}
+
+.sectionTableVehiclesH{
+  border: 1px solid;
+  justify-content:space-evenly;
+  font-size:medium;
+  padding: 5px;
+}
+
+.navLinkPresu{
+  color :#ffffff;
+  text-decoration: none;
+}
+
+.sectionTableVehiclesD {
+  border: 1px solid;
+  justify-content:space-evenly;
+  font-size:medium;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  margin : 0 auto;
+}
+
+.sectionContactForm{
+  color:#000;
+  margin:0 auto;
+  max-width: 25em;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.asideContact{
+  color:#000000;
+  margin:0 auto;
+  max-width: 25em;
+}
+
+.carrouselImg {
+  max-width: 70%;
+}
+
+.googleMap{
+  width: 100%;
+  height: 30em;
+}
+
+.containerGrid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+/* Animacion para Home a falta de carousel Se agrega en la rama nueva para animaciones
+    .cover{ animation: changeBg 10s infinite; width:auto; height:70vh; background:no-repeat fixed center; background-size:cover;
+    }
+  @keyframes changeBg{
+     0%  {background-image: url("../img/ambulancia\ 1.jpg");}
+     50% {background-image: url("../img/ambulancia\ 2.jpeg");}
+     100% {background-image: url("../img/ambulancia\ 3.jpg");}
+  }
+  */
+@media (max-width: 768px) {
+
+    .articles{
+      flex-wrap: wrap;
+    }
+    .containerGrid{
+      grid-template-columns: 1fr;
+    }
+
+    .navToggle{
+      display:block;
+    }
+
+    .headerNavMenu{
+      flex-direction: column;
+    }
+
+    .containerHeaderNavMenu{
+      flex-basis: 100%;
+      display:none;
+    }
+    .containerHeaderNavMenu_visible{
+      display:block;
+    }
+
+    .footerNavMenu{
+      display:none;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Salud Servicio de Ambulancias</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/site.webmanifest">
+    <script defer src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="headerNav">
+                <a href="index.html"><img class="headerLogo" src="./icons/logo.png" rel="icon" alt="Ambulance"></a>
+                <button class="navToggle"><i class="fas fa-bars"></i></button>
+                <div class="containerHeaderNavMenu">
+                    <ul class="headerNavMenu">
+                        <li class="headerNavMenuItem"><a href="services.html" class="navLink">Services</a></li>
+                        <li class="headerNavMenuItem"><a href="about.html" class="navLink">About</a></li>
+                        <li class="headerNavMenuItem"><a href="contact.html" class="navLink">Contact</a></li>
+                        <li class="headerNavMenuItem"><a href="login.html" class="navLink">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mainContact">
+        <div class="container containerGrid">
+            <section class="sectionContact">
+                <form class="sectionContactForm" action="envio.php" method="post" id="contact">
+                    <h3 class="articleTitle">Contactanos</h3>
+                    <input class="logFormInput" type="text" placeholder="Nombre:" name="name" id="name">
+                    <input class="logFormInput" type="email" placeholder="Correo:" name="email" id="email">
+                    <input class="logFormInput" type="phone" placeholder="Telefono:" name="phone" id="phone">
+                    <textarea class="logFormInput" name="comment" id="comment" cols="25" rows="10"
+                        placeholder="Mensaje:"></textarea>
+                    <input class="logFormInput" type="submit" value="Enviar">
+                    <input class="logFormInput" type="reset" value="Cancelar">
+                </form>
+            </section>
+
+            <aside class="asideContact">
+                <div class="mapouter">
+                    <h3 class="articleTitle">Encontranos en nuestras oficinas comerciales</h3>
+                    <iframe class="googleMap"
+                        src="https://maps.google.com/maps?q=Balcarce%201909&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footerNavMenu">
+                <li class="footerNavMenuItem"><a href="services.html" class="navLink">Services</a></li>
+                <li class="footerNavMenuItem"><a href="about.html" class="navLink">About</a></li>
+                <li class="footerNavMenuItem"><a href="contact.html" class="navLink">Contact</a></li>
+                <li class="footerNavMenuItem"><a href="login.html" class="navLink">Login</a></li>
+            </ul>
+            <p class="footerTitle">GEMSALUD S.A.© 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>
