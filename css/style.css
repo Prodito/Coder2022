@@ -1,46 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
-*{
-	padding: 0;
-	margin: 0;
-	font-family: 'League Spartan', sans-serif;
-	box-sizing: border-box;
+body {
+ font-family:"League Spartan";
+ display: grid;
+ grid-template-rows: auto 1fr auto;
+ min-height: 100vh;
 }
 
-.container{
-    width:80%;
-    margin:0 auto;
-}
-
-header{
-	background-color: #3d8ccc;
-}
-
-.headerNav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    flex-wrap: wrap;
-}
-
-.headerNavMenu{
-    display:flex;
-    list-style-type: none;
+.navbarCustom{
+  background-color:#3d8ccc;
+  position: sticky;
+  top:0;
+  z-index: 1020;
 }
 
 .headerLogo{
     width:100px;
 }
 
-.navToggle {
-  color:#ffffff;
-  background-color:#3170a3;
-  padding:10px;
-  border: solid 1px;
-  border-radius: 5px;
-  font-size: 30px;
-  display:none;
+.imgCustom{
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.ctCustom{
+  background-color:rgba(0, 0, 0, 0.7);
+  padding: 5px 0 ;
+
 }
 
 .mainLogin{
@@ -67,10 +53,6 @@ header{
   padding: 20px 0;
 }
 
-.mainIndex{
-    background-color: #ffffff;
-}
-
 footer{
 	background-color: #3d8ccc;
   padding:20px;
@@ -84,8 +66,9 @@ footer{
 }
 
 .footerTitle{
+    color: #000000;
     text-align: center;
-    font-size: x-small;
+    font-size: small;
     margin-top: 15px;
 }
 
@@ -104,24 +87,17 @@ footer{
     transition:0.5s;
 }
 
-body{
-	  display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
-
 .sectionLogForm{
     color:#000;
-    margin:0 auto;
-    max-width: 30em;
+    margin:50px auto;
+    max-width: 23em;
     background-color: #ffffff;
-    padding: 40px;
-    border-radius: 50px;
-    margin-top: 25px;
+    padding: 30px;
+    border-radius: 45px;
 }
 
 .logFormTitle{
-    margin-bottom:20px;
+    margin-bottom:10px;
     font-size: x-large;
 }
 
@@ -131,6 +107,7 @@ body{
     margin-bottom: 20px;
     padding:10px;
     font-size: medium;
+    border-radius: 10px;
 }
 
 .logFormP {
@@ -142,22 +119,24 @@ body{
     color:#000;
 }
 
-.article{
-  padding: 30px 0;
+
+@media  (min-width:768px){
+  .navbarCustom {
+    position: initial;
+  }
 }
 
-.articles{
-    display:flex;
-    gap:20px;
-}
+/*Hasta aca se usa el css*/
+
+
+
+
+
+
 
 .articleTitle{
     margin-bottom: 10px;
     font-size: xx-large;
-}
-
-.articleP{
-  margin-bottom: 10px;
 }
 
 .sectionTableVehicles{
@@ -217,56 +196,7 @@ body{
   max-width: 25em;
 }
 
-.carrouselImg {
-  max-width: 70%;
-}
-
 .googleMap{
   width: 100%;
   height: 30em;
-}
-
-.containerGrid{
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-}
-
-/* Animacion para Home a falta de carousel Se agrega en la rama nueva para animaciones */
-    .cover{ animation: changeBg 10s infinite; width:auto; height:70vh; background:no-repeat fixed center; background-size:cover;
-    }
-  @keyframes changeBg{
-     0%  {background-image: url("../img/ambulancia\ 1.jpg");}
-     50% {background-image: url("../img/ambulancia\ 2.jpeg");}
-     100% {background-image: url("../img/ambulancia\ 3.jpg");}
-  }
-  
-@media (max-width: 768px) {
-
-    .articles{
-      flex-wrap: wrap;
-    }
-    .containerGrid{
-      grid-template-columns: 1fr;
-    }
-
-    .navToggle{
-      display:block;
-    }
-
-    .headerNavMenu{
-      flex-direction: column;
-    }
-
-    .containerHeaderNavMenu{
-      flex-basis: 100%;
-      display:none;
-    }
-    .containerHeaderNavMenu_visible{
-      display:block;
-    }
-
-    .footerNavMenu{
-      display:none;
-  }
 }
