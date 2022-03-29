@@ -23,6 +23,19 @@ body {
   top: 0;
   z-index: 1020; }
 
+.navLink {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: large;
+  display: block; }
+
+.navLink:hover, navLink:active {
+  color: #000000;
+  background-color: #ffffff;
+  transition: 0.5s; }
+
 .headerLogo {
   width: 100px; }
 
