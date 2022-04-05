@@ -1,0 +1,210 @@
+body {
+    font-family: "League Spartan";
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.navbarCustom {
+    background-color: map-get($colors, backgroundnav);
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.headerLogo {
+    width: 100px;
+}
+
+.imgCustom {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.ctCustom {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0;
+}
+
+.mainLogin {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/backgroundlogin.jpg");
+    @extend .padding-2;
+    @include bg-setup;
+}
+
+.mainServices {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/backgroundServices.jpg");
+    @extend .padding-2;
+    @include bg-setup;
+}
+
+.mainContact {
+    background: url("../img/contact-us.jpg");
+    @include bg-setup;
+    @extend .padding-2;
+}
+
+footer {
+    background-color: map-get($colors, backgroundnav);
+    @extend .padding-2;
+}
+
+.footerNavMenu {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.footerTitle {
+    color: #000000;
+    text-align: center;
+    font-size: small;
+    margin-top: 15px;
+}
+
+.sectionLogForm {
+    color: #000;
+    @extend .margin-5;
+    margin: 50px auto;
+    max-width: 23em;
+    background-color: #ffffff;
+    @extend .padding-3;
+    @extend .border-radius-5;
+
+}
+
+.logFormTitle {
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.logFormInput {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.logFormP {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+
+.logFormP:hover {
+    color: #000;
+}
+
+
+@media (min-width:768px) {
+    .navbarCustom {
+        position: initial;
+    }
+}
+
+.articleTitle {
+    margin-bottom: 10px;
+}
+
+.sectionTableVehicles {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid;
+    border-spacing: 10px 5px;
+    margin: 0 auto;
+    max-width: 35em;
+    @extend .padding-1;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.sectionTitle {
+    display: flex;
+    justify-content: center;
+    color:#ffffff;
+}
+
+.sectionTableVehiclesH {
+    border: 1px solid;
+    justify-content: space-evenly;
+    font-size: medium;
+    padding: 5px;
+}
+
+.navLinkPresu {
+    text-decoration: none;
+    color:map-get($colors,navegacion);
+}
+
+.navLinkPresu:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.sectionTableVehiclesD {
+    border: 1px solid;
+    justify-content: space-evenly;
+    font-size: medium;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.sectionContactForm {
+    margin: 0 auto;
+    max-width: 25em;
+    background-color: map-get($colors, contactbackground);
+    @extend .padding-2;
+    @extend .border-radius-5;
+}
+
+.asideContact {
+    margin: 0 auto;
+    max-width: 25em;
+}
+
+.googleMap {
+    width: 100%;
+    height: 30em;
+}
+
+ul {
+    li {
+        a {
+            color: map-get($colors, navegacion);
+            text-decoration: none;
+            font-size: large;
+            display: block;
+            @extend .padding-1;
+            @extend .border-radius-1;
+
+            &:hover,
+            &:active {
+                color: map-get($colors, hovercolor);
+                background-color: map-get($colors, backgroundhover);
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+body {
+
+    h1,
+    h2 {
+        color: map-get($colors, titulos);
+        font-size: $fontSizeTitles;
+    }
+}
+
+//index x2, about x2
+div {
+    p {
+        color: map-get($colors, parrafos);
+    }
+}
