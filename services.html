@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gem Salud Servicio de Ambulancias</title>
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-        <link rel="manifest" href="./icons/site.webmanifest">
-      </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Salud Servicio de Ambulancias CABA - GCBA Servicios</title>
+    <meta name="description" content="Servicios de traslados a hospitales y cotizacion">
+    <meta name="keywords"
+        content="Servicio de ambulancias, Ambulancias, Traslados, Complejidad, Alta complejidad, Baja complejidad, Traslados neo natales, servicio de traslados">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/site.webmanifest">
+</head>
+
 <body>
     <!--NavBar start-->
     <nav class="navbar navbar-expand-lg navbar-dark navbarCustom">
@@ -19,17 +23,25 @@
             <a class="navbar-brand" href="index.html"><img class="headerLogo rounded-circle" src="./icons/logo.png"
                     rel="icon" alt="Ambulance"></a>
             <button class="navbar-toggler navbarButtonCustom" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="navLink " href="services.html">Services</a>
-                    <a class="navLink " href="about.html">About</a>
-                    <a class="navLink " href="contact.html">Contact</a>
-                    <a class="navLink" href="login.html">Login</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -38,7 +50,7 @@
     <main class="mainServices">
         <div class="container">
             <section class="sectionTable">
-                <h3 class="sectionTitle">Distintas complejidades en Moviles para traslados de personas</h3>
+                <h1 class="sectionTitle">Distintas complejidades en Moviles para traslados de personas</h1>
                 <table class="sectionTableVehicles">
                     <tr>
                         <th class="sectionTableVehiclesH">Nuestros Moviles</th>
@@ -70,7 +82,7 @@
             </section>
             <section class="sectionContact">
                 <form class="sectionLogForm" action="envio.php" method="post" id="contact">
-                    <h3 class="articleTitle">Contactanos</h3>
+                    <h2 class="articleTitle">Contactanos</h2>
                     <input class="logFormInput" type="text" placeholder="Nombre:" name="name" id="name">
                     <input class="logFormInput" type="email" placeholder="Correo:" name="email" id="email">
                     <input class="logFormInput" type="phone" placeholder="Telefono:" name="phone" id="phone">
@@ -85,11 +97,11 @@
     <footer class="footer">
         <div class="container">
             <ul class="footerNavMenu d-none d-md-flex">
-                <li class="footerNavMenuItem"><a href="index.html" class="navLink">Home</a></li>
-                <li class="footerNavMenuItem"><a href="services.html" class="navLink">Services</a></li>
-                <li class="footerNavMenuItem"><a href="about.html" class="navLink">About</a></li>
-                <li class="footerNavMenuItem"><a href="contact.html" class="navLink">Contact</a></li>
-                <li class="footerNavMenuItem"><a href="login.html" class="navLink">Login</a></li>
+                <li class="footerNavMenuItem"><a href="index.html">Home</a></li>
+                <li class="footerNavMenuItem"><a href="services.html">Services</a></li>
+                <li class="footerNavMenuItem"><a href="about.html">About</a></li>
+                <li class="footerNavMenuItem"><a href="contact.html">Contact</a></li>
+                <li class="footerNavMenuItem"><a href="login.html">Login</a></li>
             </ul>
             <p class="footerTitle">GEMSALUD S.A.© 2022</p>
         </div>

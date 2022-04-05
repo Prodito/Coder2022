@@ -1,3 +1,43 @@
-$footerColor: #FFFFFF;
-$APadding: 10px; 
-$onHoverColor:#000000;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+$colors:(
+    titulos:#000000,
+    parrafos:#000000,
+    navegacion:#FFFFFF,
+    backgroundnav:#3d8ccc,
+    hovercolor:#000000,
+    backgroundhover:#FFFFFF,
+    contactbackground:#FFFFFF
+);
+
+//Vars
+$fontSizeTitles:x-large;
+$fontMain:"League Spartan";
+
+//Mixins
+@mixin bg-setup {
+    background-color: #FFFFFF; 
+    background-position: center;
+    background-size: cover;   
+}
+
+//Bucles
+@for $i from 1 through 10 {
+	.padding-#{$i}{
+	padding:10px * $i;
+	}
+}
+
+@for $i from 1 through 10 {
+	.margin-#{$i}{
+	margin:10px * $i;
+	}
+}
+
+@for $i from 1 through 10 {
+	.border-radius-#{$i}{
+	border-radius:10px * $i;
+	}
+}
+
+
