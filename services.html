@@ -10,18 +10,14 @@
         content="Servicio de ambulancias, Ambulancias, Traslados, Complejidad, Alta complejidad, Baja complejidad, Traslados neo natales, servicio de traslados">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/site.webmanifest">
+    <link rel="icon" type="image/png" href="./icons/logo.png">
 </head>
 
 <body>
-    <!--NavBar start-->
     <nav class="navbar navbar-expand-lg navbar-dark navbarCustom">
         <div class="container px-3">
-            <a class="navbar-brand" href="index.html"><img class="headerLogo rounded-circle" src="./icons/logo.png"
-                    rel="icon" alt="Ambulance"></a>
+            <a class="navbar-brand" href="index.html"><img class="headerLogo rounded-3" src="./icons/logo.png"
+                    rel="icon" alt="Company Logo"></a>
             <button class="navbar-toggler navbarButtonCustom" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -45,55 +41,62 @@
             </div>
         </div>
     </nav>
-    <!--NavBar End-->
 
     <main class="mainServices">
-        <div class="container">
-            <section class="sectionTable">
-                <h1 class="sectionTitle">Distintas complejidades en Moviles para traslados de personas</h1>
-                <table class="sectionTableVehicles">
-                    <tr>
-                        <th class="sectionTableVehiclesH">Nuestros Moviles</th>
-                        <th class="sectionTableVehiclesH">Complejidad</th>
-                        <th class="sectionTableVehiclesH">Presupuestos</th>
-                    </tr>
-                    <tr>
-                        <td class="sectionTableVehiclesD">Polivalentes</td>
-                        <td class="sectionTableVehiclesD">Alta complejidad</td>
-                        <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="#">Haz Click aqui! </a></td>
-                    </tr>
-                    <tr>
-                        <td class="sectionTableVehiclesD">Polivalentes</td>
-                        <td class="sectionTableVehiclesD">Baja complejidad</td>
-                        <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="#">Haz Click aqui! </a></td>
-                    </tr>
-                    <tr>
-                        <td class="sectionTableVehiclesD">Monovalente</td>
-                        <td class="sectionTableVehiclesD">Pediatrico o Neonatal</td>
-                        <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="#">Haz Click aqui! </a></td>
-                    </tr>
-                    <tr>
-                        <td class="sectionTableVehiclesD">Moviles traslados base</td>
-                        <td class="sectionTableVehiclesD">Baja o Media complejidad</td>
-                        <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="#">Haz Click aqui! </a></td>
+        <div class="container-fluid">
+            <div class="row row-cols-md-2 row-cols-1">
+                <section>
+                    <h1 class="sectionTitle">Moviles para traslados de Distinta complejidad</h1>
+                    <table class="sectionTableVehicles">
+                        <tr>
+                            <th class="sectionTableVehiclesH">Nuestros Moviles</th>
+                            <th class="sectionTableVehiclesH">Complejidad</th>
+                            <th class="sectionTableVehiclesH">Presupuestos</th>
+                        </tr>
+                        <tr>
+                            <td class="sectionTableVehiclesD">Polivalentes</td>
+                            <td class="sectionTableVehiclesD">Alta complejidad</td>
+                            <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="404.html">Haz Click aqui!
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <td class="sectionTableVehiclesD">Polivalentes</td>
+                            <td class="sectionTableVehiclesD">Baja complejidad</td>
+                            <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="404.html">Haz Click aqui!
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <td class="sectionTableVehiclesD">Monovalente</td>
+                            <td class="sectionTableVehiclesD">Pediatrico o Neonatal</td>
+                            <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="404.html">Haz Click aqui!
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <td class="sectionTableVehiclesD">Moviles traslados base</td>
+                            <td class="sectionTableVehiclesD">Baja o Media complejidad</td>
+                            <td class="sectionTableVehiclesD"><a class="navLinkPresu" href="404.html">Haz Click aqui!
+                                </a></td>
 
-                    </tr>
-                </table>
-            </section>
-            <section class="sectionContact">
-                <form class="sectionLogForm" action="envio.php" method="post" id="contact">
-                    <h2 class="articleTitle">Contactanos</h2>
-                    <input class="logFormInput" type="text" placeholder="Nombre:" name="name" id="name">
-                    <input class="logFormInput" type="email" placeholder="Correo:" name="email" id="email">
-                    <input class="logFormInput" type="phone" placeholder="Telefono:" name="phone" id="phone">
-                    <textarea class="logFormInput" name="comment" id="comment" rows="2"
-                        placeholder="Mensaje:"></textarea>
-                    <input class="logFormInput" type="submit" value="Enviar">
-                    <input class="logFormInput" type="reset" value="Cancelar">
-                </form>
-            </section>
+                        </tr>
+                    </table>
+                </section>
+
+                <section class="sectionContact">
+                    <form class="sectionLogForm" action="envio.php" method="post" id="contact">
+                        <h2 class="articleTitle">Contactanos</h2>
+                        <input class="logFormInput" type="text" placeholder="Nombre:" name="name" id="name">
+                        <input class="logFormInput" type="email" placeholder="Correo:" name="email" id="email">
+                        <input class="logFormInput" type="phone" placeholder="Telefono:" name="phone" id="phone">
+                        <textarea class="logFormInput" name="comment" id="comment" rows="2"
+                            placeholder="Mensaje:"></textarea>
+                        <input class="logFormInput" type="submit" value="Enviar">
+                        <input class="logFormInput" type="reset" value="Cancelar">
+                    </form>
+                </section>
+            </div>
         </div>
     </main>
+
     <footer class="footer">
         <div class="container">
             <ul class="footerNavMenu d-none d-md-flex">

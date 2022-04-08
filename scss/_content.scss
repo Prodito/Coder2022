@@ -26,8 +26,20 @@ body {
     padding: 5px 0;
 }
 
+.backgroundAbout {
+    @extend .padding-2;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
 .mainLogin {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/backgroundlogin.jpg");
+    @extend .padding-2;
+    @include bg-setup;
+}
+
+.mainAbout {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/backgroundAboutus.jpg");
     @extend .padding-2;
     @include bg-setup;
 }
@@ -120,24 +132,27 @@ footer {
     @extend .padding-1;
     margin-top: 10px;
     overflow: auto;
+    background-color: rgba(61,140,204,0.7);
 }
 
 .sectionTitle {
     display: flex;
     justify-content: center;
-    color:#ffffff;
+    color: #ffffff;
+    padding-inline: 20px;
+    margin-bottom: 50px;
 }
 
 .sectionTableVehiclesH {
-    border: 1px solid;
     justify-content: space-evenly;
-    font-size: medium;
+    font-size: 1.5rem;
     padding: 5px;
+    
 }
 
 .navLinkPresu {
     text-decoration: none;
-    color:map-get($colors,navegacion);
+    color: map-get($colors, navegacion);
 }
 
 .navLinkPresu:hover {
@@ -148,7 +163,7 @@ footer {
 .sectionTableVehiclesD {
     border: 1px solid;
     justify-content: space-evenly;
-    font-size: medium;
+    font-size: 1.25rem;
     padding: 5px;
     color: #ffffff;
     text-decoration: none;
@@ -182,6 +197,8 @@ ul {
             display: block;
             @extend .padding-1;
             @extend .border-radius-1;
+            font-family: 'Oswald', sans-serif;
+            font-size: $fontSizenav;
 
             &:hover,
             &:active {
@@ -206,5 +223,18 @@ body {
 div {
     p {
         color: map-get($colors, parrafos);
+        font-size: $fontSizeParagraphs;
+        line-height: 1.6;
+        text-align: justify;
     }
+}
+
+.container404{
+    display:grid;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btnCustom {
+    margin-inline: auto;
 }

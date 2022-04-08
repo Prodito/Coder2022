@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 $colors:(
     titulos:#000000,
     parrafos:#000000,
     navegacion:#FFFFFF,
-    backgroundnav:#3d8ccc,
+    backgroundnav:rgb(61, 140, 204),
     hovercolor:#000000,
     backgroundhover:#FFFFFF,
     contactbackground:#FFFFFF
 );
 
 //Vars
-$fontSizeTitles:x-large;
+$fontSizeTitles:2rem;
+$fontSizeParagraphs:1.25rem;
+$fontSizenav:1.5rem;
 $fontMain:"League Spartan";
 
 //Mixins
